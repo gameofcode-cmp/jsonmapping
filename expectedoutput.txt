@@ -1,0 +1,6 @@
+Apartment, 1 Bedroom - 1067.21
+Apartment, 1 Bedroom - 1067.21, 1283.22
+Family Room - 974.05, 1067.21, 1283.22
+Family Room - 974.05, 1067.21, 1184.05, 1283.22
+Family Room, Terrace - 974.05, 1058.75, 1067.21, 1184.05, 1283.22
+Family Room, Terrace - 974.05, 1058.75, 1067.21, 1184.05, 1268.75, 1283.22

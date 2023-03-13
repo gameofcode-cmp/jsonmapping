@@ -1,0 +1,10 @@
+version: '2'
+services:
+  chris-test:
+    container_name: chris-test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/var/www/html
+    entrypoint: ["php", "runner.php"]

@@ -1,0 +1,17 @@
+{
+    "name": "hotelmap/chris-test",
+    "autoload": {
+        "psr-4": {
+            "Hotelmap\\ChrisTest\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "JH"
+    }],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
