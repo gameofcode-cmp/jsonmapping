@@ -32,8 +32,17 @@ class Feed
             throw new \Exception("No rooms to sort");
         }
 
-        // Sort feedOfRooms.  Ensure that the rates element are sorted in ascending order.
-        
+        $unsortedFeedofRooms = $this->feedOfRooms;
+        $this->feedOfRooms = [];
+
+        // Sort the rates in ascending order for each room
+        foreach ($unsortedFeedofRooms as $room) {
+            foreach ($room['rates'] as $rate) {
+                $allRates[] = $rate;
+                sort($allRates);
+                $this->addRoom($room['room_name'], $allRates);
+            }
+        }
     }
 
     /**
