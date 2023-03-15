@@ -49,7 +49,10 @@ try {
 
     $allrates = $mongoQuery->getAllRoomRates();
 
+    echo "Rates per room via mongo\n";
     print_r($rates);
+
+    echo "All rates via mongo\n";
     print_r($allrates);
 
 } catch (\Exception $error) {
