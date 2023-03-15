@@ -8,3 +8,13 @@ services:
     volumes:
       - ./:/var/www/html
     entrypoint: ["php", "runner.php"]
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    logging:
+      driver: none
